@@ -5,3 +5,42 @@
 body{padding-bottom:90px}header{padding:18px 22px}.brand{font-size:21px}.sync-bar[hidden]{display:none}.sync-bar{font-size:12px;background:#fff5df;border-radius:12px}.bottom-tabs{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;justify-content:center;gap:0;background:#fff;border-top:2px solid #c7e4f4;padding:8px 12px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -4px 16px #183c640b}.bottom-tabs button{display:flex;flex-direction:column;background:none;border-radius:14px;gap:5px;font-size:12px;padding:8px 15px;width:110px;min-height:57px;color:#526d86}.bottom-tabs button.selected{background:#e3f6d4;color:#183c64}.bottom-tabs svg{width:23px;height:23px}.chore-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.chore-heading h1{margin:8px 0;font-size:35px}.mini-avatar .avatar{width:75px;height:84px}.quiet-stats{font-size:13px;color:var(--muted);display:flex;gap:9px;align-items:center;margin:0 0 25px}.quiet-stats span{color:#a7c9dc}.current-chore{border:2px solid #ffb36b;background:#fff1df}.chore-row{padding:18px}.chore-row .row{gap:6px}.chore-row button{padding:10px 13px}.treasure-link{margin-top:26px;border-top:1px solid var(--line);padding:20px 0;display:grid;gap:10px}.treasure-link>div{display:flex;align-items:center;gap:8px}.remember-choice{display:flex;align-items:center;gap:10px;font-size:13px;line-height:1.5}.remember-choice input{width:20px;height:20px;flex-shrink:0}.numeric-pin{font-size:22px;letter-spacing:6px}.menu-list{max-width:600px}.menu-list button{justify-content:flex-start}.game-tabs{display:none}@media(max-width:600px){.brand{font-size:19px}header{padding:18px}.bottom-tabs button{width:25%;padding:8px}.chore-row{flex-wrap:wrap}.quiet-stats{flex-wrap:wrap}main{padding-top:8px}.chore-heading h1{font-size:32px}}
 #account-bar{max-width:950px;margin:0 auto;padding:0 24px}.profile-chip{background:#fff;border:1px solid var(--line);min-height:38px;padding:7px 12px;font-size:13px;gap:8px}.profile-chip svg{width:19px;height:19px}.profile-chip span{max-width:190px;overflow:hidden;text-overflow:ellipsis}.den-collections{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.bottom-tabs button{width:33.333%;max-width:170px}.bottom-tabs button span{font-weight:800}.menu-list{gap:14px}.remember-choice input{accent-color:#e86b17}@media(max-width:600px){#account-bar{padding:0 18px 10px}.bottom-tabs button{width:33.333%}}
 #account-bar{display:flex;gap:8px;align-items:center;justify-content:space-between}.logout-link{background:transparent;font-size:12px;padding:6px 8px;min-height:34px}
+/* Unified, flat controls. Orange remains a decorative accent. */
+:root,body.princess{--primary:#1766a3}
+button{box-shadow:none!important;line-height:1.3;white-space:normal;vertical-align:middle;max-width:100%;flex-shrink:0;transition:background-color .15s,border-color .15s}
+button:active{transform:none;box-shadow:none!important}
+.primary{background:#1766a3;color:#fff;border:1px solid #1766a3;box-shadow:none}
+.secondary{background:#e1f1fc;color:#183c64;border:1px solid #b9d9ee}
+button:not(.primary):not(.secondary):not(.danger){border-color:var(--line)}
+button:disabled{cursor:default;opacity:.55}
+.card,.mission{box-shadow:none}
+.row,.toolbar,.ui-actions{gap:12px}
+.ui-actions{display:flex;align-items:center;flex-wrap:wrap;margin-top:18px}
+.ui-actions>button{margin:0}
+.card>form>button[type=submit],form.card>button[type=submit]{margin-top:18px}
+form label{clear:both}
+.card>button+button,.hero button+button{margin-left:0}
+.attack-grid{gap:12px}.attack-grid button{min-width:0;width:100%;height:100%}
+.quest{gap:18px}.chore-row .row{gap:10px}.chore-row button{min-height:44px}
+.den-collections{gap:12px}.den-collections button{min-height:46px}
+.game-tabs button,.bottom-tabs button{box-shadow:none!important}
+.menu-list button{width:100%;margin:0}.stack{gap:14px}
+.profile-dialog{box-sizing:border-box;border:0;border-radius:24px;padding:30px;width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 48px);overflow:auto;color:#183c64;background:#fff;box-shadow:0 20px 70px #10273a30}
+.profile-dialog::backdrop{background:#152c40aa}
+.profile-dialog h2{font-size:28px;margin:20px 0 10px;padding-right:30px}
+.profile-dialog>p{margin:0 0 22px;font-size:14px;line-height:1.6}
+.profile-close{position:absolute;top:16px;right:16px;border-radius:50%;background:#eff5f8;width:38px;height:38px;min-height:38px;padding:8px}
+.profile-symbol{display:inline-flex;background:#e1f1fc;border-radius:16px;padding:15px}.profile-symbol svg{width:28px;height:28px}
+.profile-options{display:grid;gap:10px;margin-top:20px}
+.profile-option{width:100%;display:flex;text-align:left;justify-content:flex-start;gap:14px;padding:16px;border:1px solid #d2e1ea!important;border-radius:16px;background:#fff;min-height:82px}
+.profile-option.current{background:#eef7fd;border-color:#b2d4eb!important}
+.profile-initial{display:flex;align-items:center;justify-content:center;background:#1766a3;color:white;font-size:20px;border-radius:50%;width:46px;height:46px;flex-shrink:0}
+.profile-detail{display:flex;flex:1;min-width:0;flex-direction:column;gap:4px}.profile-detail strong{font-size:17px;overflow-wrap:anywhere}.profile-detail>span{font-size:12px;color:#526d86;font-weight:500;overflow-wrap:anywhere}
+.profile-option>.lucide{color:#1766a3}
+.profile-footer{display:grid;gap:10px;margin-top:20px}.profile-footer button{width:100%;padding:14px;border-radius:14px}
+.profile-add{background:#fff;border:1px solid #c7dae7!important;color:#183c64}
+.profile-logout{background:#f0f5f9;color:#183c64}
+.profile-dialog>.profile-note{font-size:11px;margin:16px 0 0;color:#526d86}
+@media(max-width:600px){.profile-dialog{padding:24px}.profile-dialog h2{font-size:25px}.profile-option{padding:13px;gap:10px}.profile-initial{width:42px;height:42px}.ui-actions{align-items:stretch}.ui-actions>button{flex:1 1 145px}.chore-row .row{flex-wrap:wrap}.toolbar{flex-wrap:wrap}.attack-grid button{font-size:14px;padding:14px 10px}.card,.hero{min-width:0}.profile-chip{max-width:calc(100% - 65px)}}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
+body.profile-open{overflow:hidden}.profile-dialog{overscroll-behavior:contain}.den-collections button{flex:1 1 150px;font-size:13px;padding:12px}.den-collections .lucide{width:21px;height:21px}@media(max-width:600px){.toolbar h2{font-size:20px}.toolbar>.small{font-size:13px;padding:10px 12px}.profile-footer button{flex:none}}
