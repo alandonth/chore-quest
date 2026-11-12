@@ -1,4 +1,4 @@
-const CACHE='dragons-den-v11';
+const CACHE='dragons-den-v12';
 const FILES=['./','./index.html','./style.css','./app.js','./game.js','./admin.js','./ui.js','./me.js','./rewards.js','./lucide.min.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>(k.startsWith('dragon-radar-')||k.startsWith('chore-quest-')||k.startsWith('dragons-den-'))&&k!==CACHE).map(k=>caches.delete(k))))));
