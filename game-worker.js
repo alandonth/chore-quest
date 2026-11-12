@@ -37,4 +37,4 @@ if(action==='hatch'){const egg=g.eggs.find(x=>x.id===body.egg);if(!egg||egg.prog
 return out({error:'Unknown action.'},404)
 }catch(e){if(e.status)return out({error:e.message},e.status);throw e}}
 
-function publicAvatar(data,equipment){let a={},g={};try{a=JSON.parse(data||'{}')}catch{}try{g=JSON.parse(equipment||'{}')}catch{}const color=(v,f)=>/^#[0-9a-f]{6}$/i.test(v)?v:f;return {skin:color(a.skin,'#c98c60'),hair:color(a.hair,'#473129'),outfit:color(a.outfit,'#16706b'),crown:a.crown===true,accessory:['royal','cape'].includes(g.accessory)?g.accessory:null}}
+function publicAvatar(data,equipment){let a={},g={};try{a=JSON.parse(data||'{}')}catch{}try{g=JSON.parse(equipment||'{}')}catch{}const color=(v,f)=>/^#[0-9a-f]{6}$/i.test(v)?v:f;return {gender:a.gender==='girl'?'girl':'boy',skin:color(a.skin,'#c98c60'),hair:color(a.hair,'#473129'),outfit:color(a.outfit,'#16706b'),crown:a.crown===true,accessory:['royal','cape'].includes(g.accessory)?g.accessory:null}}
