@@ -51,3 +51,5 @@ body.profile-open{overflow:hidden}.profile-dialog{overscroll-behavior:contain}.d
 .friends-table{min-width:0;table-layout:fixed}.friends-table th:first-child{width:43%}.friends-table th:not(:first-child){width:19%}.friends-table th,.friends-table td{font-size:inherit;white-space:normal}.leader-person{min-width:0}.leader-person>span:last-child{min-width:0}
 
 .done-step{width:100%;margin:8px 0 16px;font-size:20px;min-height:60px}.challenge #battle-attack{max-width:360px;margin:auto;display:block}.challenge label[for="battle-attack"]{font-size:14px}
+
+.me-dashboard{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 26px}.me-stat{padding:15px;background:#eff7fd;border:1px solid #d2e8f5;border-radius:16px;min-width:0}.me-stat dt{display:flex;align-items:center;gap:7px;font-size:13px;color:#526d86}.me-stat dt .lucide{width:18px;height:18px;color:#1766a3}.me-stat dd{font-size:28px;font-weight:850;margin:8px 0 0;overflow-wrap:anywhere}.me-customize-heading{font-size:20px;margin:0 0 14px}.quest-back{margin-bottom:8px}.chore-heading{margin-bottom:20px}@media(max-width:360px){.me-stat{padding:12px}.me-stat dt{font-size:11px;gap:5px}}
