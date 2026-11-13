@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "check": "node --check worker.js && node --check game-worker.js && node --check account-api.js && node --check public/app.js && node --check public/game.js && node --check public/admin.js && node --check public/ui.js && node --check public/me.js && node --check public/rewards.js && node --check public/recents.js"
+    "check": "node --check worker.js && node --check game-worker.js && node --check account-api.js && node --check public/app.js && node --check public/game.js && node --check public/admin.js && node --check public/ui.js && node --check public/me.js && node --check public/rewards.js && node --check public/recents.js && node --check public/dragon-rules.js"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
